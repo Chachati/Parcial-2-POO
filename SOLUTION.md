@@ -4,9 +4,9 @@ CONCEPTOS:
    Lanzar, Propagar y capturar.
    ¿Cuál es el objetivo de cada una? ¿Cómo se implementa en Java cada acción?.
 
-Cuando se lanza una excepcion se esta se sale del codigo actual y se entra a ejecutar el codigo de catch y si no la consigue se sale con un mensaje de error.
+Cuando se lanza una excepcion se sale del codigo actual y se entra a ejecutar el codigo de catch y si no la consigue se sale con un mensaje de error.
 
-CUando se propaga, se esta
+CUando se propaga, se esta indicando quien puede ser throwable, quien puede recibir la excepcion.(clases)
 
 Cuando se captura se esta ejecutando el codigo que produce la excepcion.
 2. ¿Qué es sobre-escritura de métodos? ¿Por qué aplicarla? ¿Cómo impedir que se sobre-escriba un método?.
