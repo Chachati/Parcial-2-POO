@@ -2,6 +2,7 @@ package entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class SabanaResearch {
@@ -19,15 +20,19 @@ public class SabanaResearch {
     }
 
     public int countOfSummaries() {
+
+        Date current = new Date();
         return this.summaries.size();
     }
 
     /**
      * Create a summary entry in the current date.
+     *
      * - Calculate the count of active projects.
      *
      * @return The new Summary entry.
      */
+
     public Summary createSummaryEntry() {
         return null;
     }
