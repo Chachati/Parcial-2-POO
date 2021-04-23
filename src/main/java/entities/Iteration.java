@@ -18,7 +18,7 @@ public class Iteration {
         project.addIteration(this);
     }
     public Duration getDuration() throws SabanaResearchException{
-        Duration FF = Duration.ZERO;
+        Duration FF = Duration.ofDays(3);
         if (activities.size() != 0) {
             for (Activity a : activities) {
                 FF = FF.plusDays(a.getDuration().toDays());
