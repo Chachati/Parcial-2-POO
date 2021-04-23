@@ -18,7 +18,15 @@ public class NormalActivity extends Activity {
     }
 
     @Override
-    public Duration getDuration() {
-        return null;
+    public Duration getDuration() throws SabanaResearchException{
+        if(steps.size() != 0) {
+            for (Step s : steps) {
+                s.getDuration();
+            }
+        }
+        else{
+            throw new SabanaResearchException(SabanaResearchException.BAD_FORMED_NORMAL_ACTIVITY);
+        }
+        return Duration.ZERO;
     }
 }
